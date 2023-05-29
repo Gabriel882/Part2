@@ -1,0 +1,38 @@
+  // this is the method for displaying the recipe
+                public void fullDisplay()
+                {
+                    {
+                        if (recipes.Count == 0)
+                        {
+                            Console.WriteLine("There are no recipes entered.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Recipe or Recipes that have been entered:");
+                            Console.WriteLine();
+
+                            int i = 1;
+                            foreach (var recipe in recipes.OrderBy(r => r.name))
+                            {
+                                Console.WriteLine($"{i}. {recipe.name}");
+                                i++;
+                            }
+
+                            Console.WriteLine();
+
+                            Console.Write("Choose a number to diplay the recipe you want: ");
+                            int recipeNumber = int.Parse(Console.ReadLine());
+                            Console.WriteLine();
+
+                            if (recipeNumber >= 1 && recipeNumber <= recipes.Count)
+                            {
+                                Recipe selectedRecipe = recipes.OrderBy(r => r.name).ToList()[recipeNumber - 1];
+                                DisplayFullRecipe(selectedRecipe);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid recipe number.");
+                            }
+                        }
+                    }
+                }
