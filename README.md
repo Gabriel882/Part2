@@ -11,5 +11,8 @@ User presses 2: The project will show the names of the captured recips
 choose a recipe name
 after choosing a name then the system will display the recipe you want to show
 The system will ask you if you want to scale up the quantities
+Choose the option yes to scale up
 
+Select what scale you want either to increase or decrease
+once that done
 
