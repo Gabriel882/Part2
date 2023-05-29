@@ -30,8 +30,6 @@ if  user presses yes then the recipe will clear
 if user presses no the project will cancel and reture to the recipe menu
 **************************************************************
 
-
-
 **************************************************************
 User Press 4: The project will exit and close
 **************************************************************
